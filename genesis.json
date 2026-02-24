@@ -1,0 +1,16 @@
+{
+  "project": {
+    "slug": "project-ultima-web",
+    "name": "Project Ultima Web",
+    "description": "Corporate landing page for UltimaMinds.ai — Living Minds AI research company"
+  },
+  "services": {
+    "frontend": {
+      "port": 15575,
+      "command": "pnpm dev --port 15575",
+      "health": "http://localhost:15575/"
+    }
+  },
+  "domain": "ultimaminds.ai",
+  "tech_stack": ["nuxt3", "vue3", "typescript", "tailwindcss", "@genesis/vue-design-system"]
+}

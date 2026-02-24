@@ -1,0 +1,78 @@
+/* Genesis Design System Tokens — single source of truth */
+@import '@genesis/vue-design-system/tokens';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--bg-space-deep);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  ::selection {
+    background: rgba(59, 130, 246, 0.3);
+    color: var(--text-primary);
+  }
+}
+
+@layer components {
+  /* Extend design system glass-panel with Tailwind border radius */
+  .glass-panel-rounded {
+    @apply rounded-2xl;
+  }
+
+  /* Stronger glass variant for nav/hero cards */
+  .glass-panel-strong {
+    background: var(--bg-glass-heavy);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-glass);
+    box-shadow: var(--shadow-glass);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      135deg,
+      var(--color-neon-blue),
+      var(--color-neon-purple),
+      var(--color-neon-cyan)
+    );
+  }
+
+  .gradient-text-warm {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      135deg,
+      var(--color-neon-purple),
+      var(--color-neon-rose),
+      var(--color-neon-amber)
+    );
+  }
+
+  .glow-border {
+    box-shadow:
+      0 0 0 1px rgba(59, 130, 246, 0.1),
+      0 0 20px rgba(59, 130, 246, 0.05),
+      inset 0 0 20px rgba(59, 130, 246, 0.02);
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

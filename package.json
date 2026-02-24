@@ -1,0 +1,28 @@
+{
+  "name": "project-ultima-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . --ext .vue,.js,.ts --fix",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@genesis/vue-design-system": "workspace:*",
+    "nuxt": "^3.21.1",
+    "vue": "^3.5.28",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@genesis/eslint-config": "workspace:*",
+    "@genesis/prettier-config": "workspace:*",
+    "@genesis/tsconfig": "workspace:*",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^6.14.0"
+  },
+  "prettier": "@genesis/prettier-config"
+}
