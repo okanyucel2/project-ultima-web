@@ -41,6 +41,12 @@ const navLinks = [
         >
           {{ link.label }}
         </a>
+        <NuxtLink
+          to="/neural-gate"
+          class="text-sm px-4 py-2 rounded-lg bg-neon-emerald/10 border border-neon-emerald/20 text-neon-emerald hover:bg-neon-emerald/20 transition-all duration-300 font-mono"
+        >
+          Neural Gate
+        </NuxtLink>
         <a
           href="#contact"
           class="text-sm px-4 py-2 rounded-lg bg-neon-blue/10 border border-neon-blue/20 text-neon-blue hover:bg-neon-blue/20 transition-all duration-300"

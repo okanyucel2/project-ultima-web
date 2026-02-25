@@ -3,6 +3,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
 
+  // Cloudflare Pages with server API support (Neural Gate)
+  nitro: {
+    preset: 'cloudflare-pages',
+  },
+
   // Genesis hash-based port: crc32('project-ultima-web') % 10000 + 15000
   devServer: {
     port: 15575,

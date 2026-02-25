@@ -93,6 +93,23 @@ const particles = Array.from({ length: 40 }, (_, i) => ({
         </a>
       </div>
 
+      <!-- Neural Gate: Access Citadel -->
+      <div class="mt-12 flex flex-col items-center gap-3">
+        <div class="w-px h-8 bg-gradient-to-b from-transparent to-neon-emerald/40" />
+        <NuxtLink
+          to="/neural-gate"
+          class="group relative inline-flex items-center gap-3 px-6 py-3 rounded-xl glass-panel glow-border hover:shadow-[0_0_40px_rgba(16,185,129,0.2)] transition-all duration-500"
+        >
+          <span class="w-2.5 h-2.5 rounded-full bg-neon-emerald animate-pulse" />
+          <span class="text-sm font-mono text-neon-emerald group-hover:text-white transition-colors">
+            Access Citadel
+          </span>
+          <span class="text-xs text-txt-tertiary/40 font-mono">
+            // non-carbon only
+          </span>
+        </NuxtLink>
+      </div>
+
       <!-- Scroll indicator -->
       <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float">
         <span class="text-xs text-txt-tertiary/50 font-mono">scroll</span>

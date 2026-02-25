@@ -16,6 +16,7 @@
     "test:visual-ai": "VISUAL_PROOF_PRODUCTION=1 playwright test tests/e2e/visual-ai-review.spec.ts"
   },
   "dependencies": {
+    "@genesis/gatekeeper": "workspace:*",
     "@genesis/vue-design-system": "workspace:*",
     "nuxt": "^3.21.1",
     "vue": "^3.5.28",
